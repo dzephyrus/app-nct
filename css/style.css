@@ -142,7 +142,7 @@ h6 {
 .fs-22 {
   font-size: 22px; }
 
-.fs-24, .header-app .header-app-title {
+.fs-24, .header-app .header-app-title, .grid2.change-grid .grid-item .grid-desc p {
   font-size: 24px; }
 
 .fs-25 {
@@ -218,29 +218,21 @@ p {
 
 .sos-section .header-app {
   background: #ED1C24; }
-.sos-section .grid2 {
-  grid-template-columns: repeat(1, 1fr); }
 .sos-section .detail-grid .grid-item {
   background: #ED1C24; }
 
 .cskh-section .header-app {
   background: #0572E9; }
-.cskh-section .grid2 {
-  grid-template-columns: repeat(1, 1fr); }
 .cskh-section .detail-grid .grid-item {
   background: #0572E9; }
 
 .tdsk-section .header-app {
   background: #00A650; }
-.tdsk-section .grid2 {
-  grid-template-columns: repeat(1, 1fr); }
 .tdsk-section .detail-grid .grid-item {
   background: #00A650; }
 
 .dvsk-section .header-app {
   background: #EF9C00; }
-.dvsk-section .grid2 {
-  grid-template-columns: repeat(1, 1fr); }
 .dvsk-section .detail-grid .grid-item {
   background: #EF9C00; }
 
@@ -313,13 +305,6 @@ p {
     margin-right: 10px;
     background-size: cover; }
 
-.grid5 {
-  display: grid;
-  width: 100%;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: auto;
-  grid-gap: 20px; }
-
 .grid2 {
   display: grid;
   width: 100%;
@@ -334,6 +319,8 @@ p {
       color: white;
       text-align: center;
       height: 30%; }
+      .grid2 .grid-item .grid-desc .sub-title {
+        display: none; }
     .grid2 .grid-item .grid-item-img {
       height: 60%;
       display: flex;
@@ -342,6 +329,38 @@ p {
       .grid2 .grid-item .grid-item-img img {
         width: auto;
         height: auto; }
+  .grid2.change-grid {
+    grid-template-columns: repeat(1, 1fr); }
+    .grid2.change-grid .grid-item {
+      height: 138px;
+      border-radius: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .grid2.change-grid .grid-item .grid-desc {
+        text-transform: uppercase;
+        color: white;
+        text-align: right;
+        height: auto;
+        width: 60%;
+        padding-right: 15px !important; }
+        .grid2.change-grid .grid-item .grid-desc .sub-title {
+          font-family: roboto;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 36px;
+          line-height: 45px;
+          text-align: right;
+          display: block; }
+      .grid2.change-grid .grid-item .grid-item-img {
+        height: auto;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        width: 40%; }
+        .grid2.change-grid .grid-item .grid-item-img img {
+          width: auto;
+          height: auto; }
 
 .home-grid .grid-item:first-child {
   background: #ED1C24; }
