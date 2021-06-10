@@ -1,0 +1,12 @@
+@charset "UTF-8";
+/* Scss Document */
+@font-face {
+  src: url("../font/SVN-Gilroy Regular.otf");
+  font-family: 'SVN-Gilroy'; }
+/*Smart phone nhỏ*/
+/*Iphone(480 x 640)*/
+/*Tablet nhỏ(480 x 640)*/
+/*Ipad dọc(768 x 1024)*/
+/*Ipad ngang(1024 x 768)*/
+
+/*# sourceMappingURL=responsive.css.map */
